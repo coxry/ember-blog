@@ -1,0 +1,11 @@
+<div class="container-fluid">
+<div class="pull-right">
+{{#link-to 'posts'}}Posts{{/link-to}}
+{{#link-to 'posts'}}About{{/link-to}}
+{{#link-to 'posts'}}Projects{{/link-to}}
+{{#if session.isAuthenticated}}
+  <a {{ action 'invalidateSession' }}>Logout</a>
+{{/if}}
+</div>
+
+{{outlet}}
