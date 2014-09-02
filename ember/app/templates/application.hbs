@@ -1,8 +1,8 @@
 <div class="container-fluid">
 <div class="pull-right">
 {{#link-to 'posts'}}Posts{{/link-to}}
-{{#link-to 'posts'}}About{{/link-to}}
-{{#link-to 'posts'}}Projects{{/link-to}}
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'projects'}}Projects{{/link-to}}
 {{#if session.isAuthenticated}}
   <a {{ action 'invalidateSession' }} href="#">Logout</a>
 {{/if}}
