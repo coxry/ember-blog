@@ -1,9 +1,9 @@
-<ul>
-{{#each}}
-<li>
-{{#link-to 'posts.show' id}}
-{{title}}
-{{/link-to}}
-</li>
+{{#each post in model}}
+<div class="text-center col-md-12 col-sm-12 col-xs-12">
+  <h2>{{#link-to 'posts.show' post.id}}{{post.title}}{{/link-to}}</h2>
+  {{#if session.isAuthenticated}}
+    <span class="glyphicon glyphicon-edit"></span>
+    <span class="glyphicon glyphicon-remove"></span>
+  {{/if}}
+</div>
 {{/each}}
-</ul>
