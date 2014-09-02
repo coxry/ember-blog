@@ -13,14 +13,12 @@
     <link rel="stylesheet" href="assets/blog.css">
   </head>
   <body>
-    <script>
-      window.BlogENV = {{ENV}};
-      window.ENV = {{ENV}};
-      window.EmberENV = window.BlogENV.EmberENV;
-    </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/blog.js"></script>
     <script>
+      window.BlogENV = require('blog/config/environment')['default'];
+      window.ENV = window.BlogENV;
+      window.EmberENV = window.BlogENV.EmberENV;
       window.Blog = require('blog/app')['default'].create(BlogENV.APP);
     </script>
   </body>
