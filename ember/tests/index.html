@@ -33,14 +33,15 @@
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
 
+    <script>
+      window.BlogENV = {{ENV}};
+      window.EmberENV = window.BlogENV.EmberENV;
+    </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/test-support.js"></script>
     <script src="assets/blog.js"></script>
     <script src="testem.js"></script>
     <script>
-      window.BlogENV = require('blog/config/environment')['default'];
-      window.EmberENV = window.BlogENV.EmberENV;
-
       require('blog/tests/test-helper');
     </script>
     <script src="assets/test-loader.js"></script>
