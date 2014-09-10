@@ -6,12 +6,13 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 
-gem 'sqlite3'
+gem 'pg'
 
 gem 'active_model_serializers'
 
 gem 'rubocop', require: false
 
+gem 'postgres_ext-serializers'
 
 
 # To use ActiveModel has_secure_password
