@@ -14,6 +14,7 @@ gem 'rubocop', require: false
 
 gem 'postgres_ext-serializers'
 
+gem "skylight"
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt'
