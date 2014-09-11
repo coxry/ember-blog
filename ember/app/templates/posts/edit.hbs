@@ -1,0 +1,8 @@
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+<form {{action "submit" on="submit"}}>
+{{input value=title class="form-control"}}
+{{textarea value=body class="form-control" rows=10}}
+<button type="button" class="btn btn-default" {{action "cancel" on="click"}}>Cancel</button>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>

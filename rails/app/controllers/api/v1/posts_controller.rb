@@ -8,4 +8,13 @@ class Api::V1::PostsController < ApplicationController
     render json: Post.find(params[:id])
   end
 
+  def update
+    Post.find(params[:id]).update(post_params)
+  end
+
+  private
+    def post_params
+      params.require(:post).permit(:title, :body)
+    end
+
 end
