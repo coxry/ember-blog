@@ -2,6 +2,9 @@
 
 module.exports = function(environment) {
   var ENV = {
+    "simple-auth": {
+      authorizer: 'authorizer:rails'
+    },
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
