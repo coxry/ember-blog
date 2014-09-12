@@ -3,7 +3,8 @@
     "document": true,
     "window": true,
     "-Promise": true,
-    "BlogENV": true
+    "BlogENV": true,
+    "Showdown": true
   },
   "browser" : true,
   "boss" : true,
